@@ -18,7 +18,7 @@ public class FoodTruckApp {
 		menu2();
 
 		kb.close();
-		// write a menu for user input
+		
 	}
 
 	public void userInput() {
@@ -26,10 +26,11 @@ public class FoodTruckApp {
 			System.out.print("Enter the name of the food truck" + (i + 1) + " : ");
 			String truckName = kb.nextLine();
 
-			if (truckName.equals("quit")) { // do i have this correct ?
+			if (truckName.equals("quit")) { 
+				System.out.println("  ");
 				System.out.println("Have a good day.");
-
-				break; /// or break;
+				System.out.println("  ");
+				break;
 			}
 			System.out.print("What type of food did you eat? :  ");
 			String foodType = kb.nextLine();
